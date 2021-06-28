@@ -1,0 +1,24 @@
+The CLI application (librarymanagement.py) Design and Features
+
+1. User interactive Application
+2. No Need to run any command to perform an operation
+3. Authentication and Authorization check for admin and student
+3. Supports the following CRUD operations on the Books List
+	Admin controls:
+		show books
+		add books
+		update books
+		remove books
+	Student controls:
+		show books
+		request books
+		return books
+4. Logging for events and messages
+5. Checks Performed:
+	i.changes the satus of the book as taken by the id of the user after issue of the book and reverts back once returned
+   ii.books can not be requested for more than the max limit of days defined in the libraryconfig.py
+  iii.a user with max limit of copies as defined in the libraryconfig.py can not request more books
+
+	
+	
+	

@@ -1,0 +1,461 @@
+The CLI application (librarymanagement.py) is designed as a user interactive library management system.
+There are 2 user roles through which we can login
+1. Student (username= "john123", password = "Password@123" )
+2. Admin (username= "admin", password = "Password#11" )
+
+Refer the config file (libraryconfig.py) to understand the pre defined configurations
+
+Follow the below cli interaction to use the application in the correct way.
+Below snippet show both admin and student operations.
+
+
+C:\Users\kailyada\Documents\Read\cli_library_management>python librarymanagement.py
+
+                ***** Welcome To Library Management System *****
+======================================================================================
+
+Admin operations
+-=====================
+L O G I N
+---------
+1. Login as an Admin
+2. Login as a Student
+3. Close Application
+
+
+Enter your choice: 1
+You have selected 1. Login as an Admin
+Enter your user name: admin
+Enter your password:
+Login Successful
+
+L I B R A R Y   M E N U
+------------------------
+1. Show Books
+2. Add Books
+3. Remove Books
+4. Update Books
+0. Close Applicaton
+
+
+Enter your choice: 1
+
+S H O W  B O O K S
+----------------
+B O O K S
+---------
+{
+    "Id": "123",
+    "Name": "C programming",
+    "Author": "Dennis Ritchie",
+    "Price": 2450,
+    "Version": 1,
+    "Available": true,
+    "TakenBy": null,
+    "IssuedDate": null,
+    "Duration": null
+}
+
+
+{
+    "Id": "132",
+    "Name": "Learn Python",
+    "Author": "Mark Lutz",
+    "Price": 3000,
+    "Version": 5,
+    "Available": true,
+    "TakenBy": null,
+    "IssuedDate": null,
+    "Duration": null
+}
+
+
+
+
+1. Main Menu
+0. Close Application
+Enter your choice: 1
+
+
+L I B R A R Y   M E N U
+------------------------
+1. Show Books
+2. Add Books
+3. Remove Books
+4. Update Books
+0. Close Applicaton
+
+
+Enter your choice: 2
+
+
+A D D   N E W   B O O K
+-------------------------
+Enter Book Id: 145
+Enter Book Name: Fluent Python
+Enter Book Author: Luciano Ramalho
+Enter Book Price: 2900
+Enter Book Version: 3
+ successfully added the book
+
+
+1. Main Menu
+0. Close Application
+Enter your choice: 1
+
+L I B R A R Y   M E N U
+------------------------
+1. Show Books
+2. Add Books
+3. Remove Books
+4. Update Books
+0. Close Applicaton
+
+Enter your choice: 1
+
+S H O W  B O O K S
+----------------
+B O O K S
+---------
+{
+    "Id": "123",
+    "Name": "C programming",
+    "Author": "Dennis Ritchie",
+    "Price": 2450,
+    "Version": 1,
+    "Available": true,
+    "TakenBy": null,
+    "IssuedDate": null,
+    "Duration": null
+}
+
+
+{
+    "Id": "132",
+    "Name": "Learn Python",
+    "Author": "Mark Lutz",
+    "Price": 3000,
+    "Version": 5,
+    "Available": true,
+    "TakenBy": null,
+    "IssuedDate": null,
+    "Duration": null
+}
+
+
+{
+    "Id": "145",
+    "Name": "Fluent Python",
+    "Author": "Luciano Ramalho",
+    "Price": "2900",
+    "Version": "3",
+    "Available": true,
+    "TakenBy": null
+}
+
+
+1. Main Menu
+0. Close Application
+Enter your choice: 1
+
+
+L I B R A R Y   M E N U
+------------------------
+1. Show Books
+2. Add Books
+3. Remove Books
+4. Update Books
+0. Close Applicaton
+
+Enter your choice: 4
+
+U P D A T E     B O O K
+---------------------
+Enter Book Id: 145
+What do you want to update:
+1. Name
+2. Author
+3. Price
+4. Version
+0. Back Menu
+Enter your choice: 1
+Enter Name: Python World
+What do you want to update:
+1. Name
+2. Author
+3. Price
+4. Version
+0. Back Menu
+Enter your choice: 0
+ successfully updated the book
+
+
+1. Main Menu
+0. Close Application
+Enter your choice: 1
+
+
+L I B R A R Y   M E N U
+------------------------
+1. Show Books
+2. Add Books
+3. Remove Books
+4. Update Books
+0. Close Applicaton
+
+Enter your choice: 1
+
+S H O W  B O O K S
+----------------
+B O O K S
+---------
+{
+    "Id": "123",
+    "Name": "C programming",
+    "Author": "Dennis Ritchie",
+    "Price": 2450,
+    "Version": 1,
+    "Available": true,
+    "TakenBy": null,
+    "IssuedDate": null,
+    "Duration": null
+}
+
+
+{
+    "Id": "132",
+    "Name": "Learn Python",
+    "Author": "Mark Lutz",
+    "Price": 3000,
+    "Version": 5,
+    "Available": true,
+    "TakenBy": null,
+    "IssuedDate": null,
+    "Duration": null
+}
+
+
+{
+    "Id": "145",
+    "Name": "Python World",
+    "Author": "Luciano Ramalho",
+    "Price": "2900",
+    "Version": "3",
+    "Available": true,
+    "TakenBy": null
+}
+
+
+1. Main Menu
+0. Close Application
+Enter your choice: 1
+
+R E M O V E     B O O K
+---------------------
+Enter Book Id: 145
+ successfully deleted the book
+
+
+L I B R A R Y   M E N U
+------------------------
+1. Show Books
+2. Add Books
+3. Remove Books
+4. Update Books
+0. Close Applicaton
+
+Enter your choice: 3
+
+1. Main Menu
+0. Close Application
+Enter your choice: 1
+
+L I B R A R Y   M E N U
+------------------------
+1. Show Books
+2. Add Books
+3. Remove Books
+4. Update Books
+0. Close Applicaton
+
+S H O W  B O O K S
+----------------
+B O O K S
+---------
+{
+    "Id": "123",
+    "Name": "C programming",
+    "Author": "Dennis Ritchie",
+    "Price": 2450,
+    "Version": 1,
+    "Available": true,
+    "TakenBy": null,
+    "IssuedDate": null,
+    "Duration": null
+}
+
+
+{
+    "Id": "132",
+    "Name": "Learn Python",
+    "Author": "Mark Lutz",
+    "Price": 3000,
+    "Version": 5,
+    "Available": true,
+    "TakenBy": null,
+    "IssuedDate": null,
+    "Duration": null
+}
+
+1. Main Menu
+0. Close Application
+Enter your choice: 0
+Closing the Application
+
+==================================================================================================================================================================
+
+Student operations:
+-=======================
+
+L O G I N
+---------
+1. Login as an Admin
+2. Login as a Student
+3. Close Application
+
+
+Enter your choice: 2
+You have selected 2. Login as a Student
+Enter your user name: john123
+Enter your password:
+Login Successful
+
+L I B R A R Y   M E N U
+------------------------
+1. Show Books
+2. Request Books
+3. Return Books
+0. Close Applicaton
+
+
+Enter your choice: 2
+
+R E Q U E S T   B O O K
+------------------------
+Enter Book Id: 132
+Enter the duration in days (maximum 25 days): 12
+ successfully issued the book
+
+
+1. Main Menu
+0. Close Application
+Enter your choice: 1
+
+L I B R A R Y   M E N U
+------------------------
+1. Show Books
+2. Request Books
+3. Return Books
+0. Close Applicaton
+
+
+Enter your choice: 1
+
+S H O W  B O O K S
+----------------
+B O O K S
+---------
+{
+    "Id": "123",
+    "Name": "C programming",
+    "Author": "Dennis Ritchie",
+    "Price": 2450,
+    "Version": 1,
+    "Available": true,
+    "TakenBy": null,
+    "IssuedDate": null,
+    "Duration": null
+}
+
+
+{
+    "Id": "132",
+    "Name": "Learn Python",
+    "Author": "Mark Lutz",
+    "Price": 3000,
+    "Version": 5,
+    "Available": false,
+    "TakenBy": "1",
+    "IssuedDate": "2021-06-28 23:36:55.707932",
+    "Duration": 12
+}
+
+
+1. Main Menu
+0. Close Application
+Enter your choice: 1
+
+
+L I B R A R Y   M E N U
+------------------------
+1. Show Books
+2. Request Books
+3. Return Books
+0. Close Applicaton
+
+
+Enter your choice: 3
+
+R E T U R N     B O O K
+---------------
+Enter Book Id: 132
+ successfully returned the book
+
+
+1. Main Menu
+0. Close Application
+Enter your choice: 1
+
+L I B R A R Y   M E N U
+------------------------
+1. Show Books
+2. Request Books
+3. Return Books
+0. Close Applicaton
+
+
+Enter your choice: 1
+
+S H O W  B O O K S
+----------------
+B O O K S
+---------
+{
+    "Id": "123",
+    "Name": "C programming",
+    "Author": "Dennis Ritchie",
+    "Price": 2450,
+    "Version": 1,
+    "Available": true,
+    "TakenBy": null,
+    "IssuedDate": null,
+    "Duration": null
+}
+
+
+{
+    "Id": "132",
+    "Name": "Learn Python",
+    "Author": "Mark Lutz",
+    "Price": 3000,
+    "Version": 5,
+    "Available": true,
+    "TakenBy": null,
+    "IssuedDate": null,
+    "Duration": null
+}
+
+1. Main Menu
+0. Close Application
+Enter your choice: 0
+Closing the Application
