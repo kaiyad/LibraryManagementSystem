@@ -113,9 +113,9 @@ class Book(object):
             logger.critical(type(inst))
             return False
 
-   def list_books(self, *kwargs):
-       """Returns List of Books"""
-       return self.book_data
+    def list_books(self, **kwargs):
+        """Returns List of Books"""
+        return self.book_data
 
 
     def create_book(self, id, name, author, price, version ):
