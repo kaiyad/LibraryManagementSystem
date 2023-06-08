@@ -8,7 +8,7 @@ from time import sleep
 import logging
 logging.basicConfig(filename="lms.log", filemode="w", format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 
 
 import libraryconfig as config
@@ -112,6 +112,11 @@ class Book(object):
             logger.critical(inst.args)
             logger.critical(type(inst))
             return False
+
+   def list_books(self, *kwargs):
+       """Returns List of Books"""
+       return self.book_data
+
 
     def create_book(self, id, name, author, price, version ):
         """
