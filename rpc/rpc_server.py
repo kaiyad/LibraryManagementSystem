@@ -1,9 +1,10 @@
 from jsonrpcserver import method, serve, Success, InvalidParams
+from library.library_manager import Library
 
 @method
-def process_request(request):
+def handle_request(request):
     if request == 'list_books':
-        return Success("List of Books")
+        return Success(Library().list_books())
 
     return InvalidParams(f"Invalid Request {request}")
 
